@@ -7,6 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <link href="/dist/output.css" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,37 +19,57 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="">
+<main class="flex flex-col justify-center items-center font-sans h-[100vh] bg-str-dark-blue">
 
-  <!-- Rating state start -->
+  <section class="
+  flex flex-col gap-5
+bg-dark-blue
+  w-10/12 h-auto 
+  p-5
+  rounded-xl
+  desktop:w-1/3
+  desktop:h-2/6
+  desktop:gap-7
+  ">
+    <!-- Rating state start -->
+    <h1 class="text-white font-bold text-2xl">How did we do?</h1> 
+    
+    <p class="text-medium-gray">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
 
-  <h1 class="text-slate-600">SADASD </h1>
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+    <div class="flex self-center gap-3">
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">1</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">2</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">3</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">4</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">5</div>
+    </div>
+    
+    
+    <button class="bg-orange rounded-3xl text-white tracking-widest font-bold py-3 hover:bg-white hover:text-orange">SUBMIT</button>
+    
+    <!-- Rating state end -->
+    
+    <!-- Thank you state start -->
+    
+    <!-- You selected Add rating here out of 5
+    
+    Thank you!
+    
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch! -->
+    
+    <!-- Thank you state end -->
+    
+    
+    
+  </section>
+  <div class="attribution text-white mt-3">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/texeraaa">Pedro Teixeira(Texeraaa)</a>.
   </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
