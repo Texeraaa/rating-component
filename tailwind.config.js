@@ -17,6 +17,7 @@ module.exports = {
         'medium-gray': 'hsl(216, 12%, 54%)',
         'str-gray': 'rgba(38,46,57,255)',
         'dark-blue': 'rgba(24,30,40,255)',
+        'str-dark-blue-2': 'rgba(20,20,29,255)',
         'str-dark-blue': 'rgba(20,20,24,255)',
       }
     },
