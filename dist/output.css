@@ -865,4 +865,14 @@ video {
   .desktop\:gap-7 {
     gap: 1.75rem;
   }
+
+  .desktop\:hover\:bg-orange:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(25 97% 53% / var(--tw-bg-opacity));
+  }
+
+  .desktop\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: hsl(0 0% 100% / var(--tw-text-opacity));
+  }
 }
