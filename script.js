@@ -1,9 +1,14 @@
 const arrayButton = document.querySelectorAll('#botao')
 const send = document.getElementById('send')
 
-arrayButton.forEach((item) => {
+
+arrayButton.forEach((item,index) => {
     item.addEventListener('click', function(e){
+
         e.preventDefault();
+
+        let rating = 0
+        rating = index + 1
 
         arrayButton.forEach((i) => {
             if(i != this){
@@ -13,12 +18,15 @@ arrayButton.forEach((item) => {
             this.classList.toggle('bg-medium-gray')
             this.classList.toggle('text-white')
         })
+
+    document.querySelector('#label').innerHTML = `
+    <p class="text-orange opacity-20 text-base">You selected ${rating} out of 5</p>
+    `
     })
 })
 const start = document.getElementById('start')
 const thank = document.getElementById('thank')
 send.addEventListener('click', () => {
-    console.log(start,thank)
     start.classList.replace('flex', 'hidden')
     thank.classList.replace('hidden', 'flex')
     // start.classList.add('hidden')
@@ -26,10 +34,3 @@ send.addEventListener('click', () => {
     // thank.classList.add('flex flex-col gap-6')
     
 })
-
-
-let num = 1
-// console.log(arrayButton[4])
-document.querySelector('#label').innerHTML = `
-<p class="text-orange opacity-20 text-base">You selected ${num} out of 5</p>
-`
