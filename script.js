@@ -10,6 +10,7 @@ arrayButton.forEach((item,index) => {
         let rating = 0
         rating = index + 1
 
+        send.removeAttribute('disabled')
         arrayButton.forEach((i) => {
             if(i != this){
                 i.classList.remove('bg-medium-gray')
