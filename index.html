@@ -14,10 +14,7 @@
   
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body class="">
 <main class="flex flex-col justify-center items-center font-sans h-[100vh] bg-str-dark-blue">
@@ -27,23 +24,25 @@
 bg-dark-blue
   w-10/12 h-auto 
   p-5
-  rounded-xl
+  rounded-3xl
   desktop:w-1/3
-  desktop:h-2/6
   desktop:gap-7
   ">
     <!-- Rating state start -->
+    <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray mb-2">
+      <img src="src/images/icon-star.svg" alt="" class="w-4">
+    </div>
     <h1 class="text-white font-bold text-2xl">How did we do?</h1> 
     
-    <p class="text-medium-gray">Please let us know how we did with your support request. All feedback is appreciated 
+    <p class="text-medium-gray text-xs">Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
 
     <div class="flex self-center gap-3">
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">1</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">2</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">3</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">4</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray" id="botao">5</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">1</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">2</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">3</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">4</div>
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">5</div>
     </div>
     
     
@@ -65,9 +64,9 @@ bg-dark-blue
     
     
   </section>
-  <div class="attribution text-white mt-3">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/texeraaa">Pedro Teixeira(Texeraaa)</a>.
+  <div class="text-xs text-center text-white mt-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/texeraaa" class="text-blue-500">Pedro Teixeira(Texeraaa)</a>.
   </div>
 </main>
 <script src="script.js"></script>
