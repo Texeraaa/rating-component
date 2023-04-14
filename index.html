@@ -20,41 +20,54 @@
 <main class="flex flex-col justify-center items-center font-sans h-[100vh] bg-str-dark-blue">
 
   <section class="
-  flex flex-col gap-5
 bg-dark-blue
-  w-10/12 h-auto 
+  w-80 h-auto 
   p-5
   rounded-3xl
   desktop:w-1/3
   desktop:gap-7
   ">
     <!-- Rating state start -->
-    <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray mb-2">
-      <img src="src/images/icon-star.svg" alt="" class="w-4">
-    </div>
-    <h1 class="text-white font-bold text-2xl">How did we do?</h1> 
-    
-    <p class="text-medium-gray text-xs">Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</p>
 
-    <div class="flex self-center gap-3">
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">1</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">2</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">3</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">4</div>
-      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">5</div>
+    <div class="flex flex-col gap-6" id="start">
+      <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray mb-2">
+        <img src="src/images/icon-star.svg" alt="" class="w-4">
+      </div>
+      <h1 class="text-white font-bold text-2xl">How did we do?</h1> 
+      
+      <p class="text-medium-gray text-xs">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+  
+      <div class="flex self-center gap-3">
+        <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">1</div>
+        <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao" data-botao="">2</div>
+        <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">3</div>
+        <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">4</div>
+        <div class="flex items-center justify-center w-10 h-10 rounded-[50%] bg-str-gray text-medium-gray cursor-pointer hover:bg-orange hover:text-white" id="botao">5</div>
+      </div>
+      
+      
+      <button class="bg-orange rounded-3xl text-white tracking-widest font-bold py-3 hover:bg-white hover:text-orange" id="send">SUBMIT</button>
+    </div>
+
+
+    <!-- Thank You state start -->
+
+    <div class="hidden items-center text-center" id="thank">
+        
+      <img src="src/images/illustration-thank-you.svg" alt="">
+
+      <div class="p-3 bg-str-gray rounded-xl " id="label"></div>
+
+      <h1 class="font-bold text-white text-2xl">Thank you!</h1>
+
+      <p class="text-medium-gray text-sm">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
     </div>
     
     
-    <button class="bg-orange rounded-3xl text-white tracking-widest font-bold py-3 hover:bg-white hover:text-orange">SUBMIT</button>
+    <!--
     
-    <!-- Rating state end -->
-    
-    <!-- Thank you state start -->
-    
-    <!-- You selected Add rating here out of 5
-    
-    Thank you!
     
     We appreciate you taking the time to give a rating. If you ever need more support, 
     don’t hesitate to get in touch! -->
